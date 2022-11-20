@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Based Events</title>
+</head>
+
+<body>
+    <!-- setTimeout() -->
+    <!-- setInterval() -->
+    <!-- clearTimeout(); -->
+    <!-- clearinterval(); -->
+
+    <!--  The Window objexct allows execution of code at specified time intervals.-->
+
+    <!-- These time intervals are called timing events -->
+
+    <!-- The two key methods to use with javascript are -->
+
+
+    <!-- setTimeout(); -->
+    <!-- Executes a function, after waiting a specified number of milliseconds -->
+
+    <!-- setTimeinterval -->
+
+    <!-- Same as SetTimeout, but repeats the execution  of the function -->
+
+
+    <div id="main-div">
+        <div>
+            <p> Want to know my name</p>
+            <p id="show"> </p>
+            <br>
+            <button id="btn" type="button">click here</button>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+   
+        var btn = document.getElementById("btn");
+
+
+        showname=()=> {
+            setTimeout(() => {
+                var showname = document.querySelector("#show");
+                showname.innerText="Teja";
+            }, 2000);
+        }
+        btn.addEventListener('click', showname);
+    </script>
+</body>
+
+</html>

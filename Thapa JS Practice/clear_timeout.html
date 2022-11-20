@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="main-div">
+        <div>
+            <p>click "tryit" . wait 3 seconds. The page will alert "helo" </p>
+            <p>Click "stop" to prevent the first function to execute.</p>
+            <p>You must click "stop" before the 2 seconds are up</p>
+
+
+            <button type="button" onclick="myvar= setTimeout(myfunc,2000)"> Try Out</button>
+
+            <button type="button" onclick="clearTimeout(myvar)">Stop it</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        function myfunc() {
+           console.log("hello");
+        };
+    </script>
+</body>
+
+</html>

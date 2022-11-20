@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse Event</title>
+</head>
+<style>
+    #main-box {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #box {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <div id="main-box">
+        <div id="box"></div>
+    </div>
+
+    <script type="text/javascript">
+        const store = document.getElementById("box");
+        store.addEventListener("mouseenter", () => {
+            store.style.backgroundColor = "red";
+            console.log("Mouse enter fired");
+        });
+
+
+        store.addEventListener("mouseleave", () => {
+            store.style.backgroundColor = "green";
+            console.log("Mouse leave fired");
+        });
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <div id="demo"> This is content</div>
+
+    <button type="button" onclick="func()"> change </button> -->
+
+
+    <!-- <div id="demo2"> This is Another contet</div>
+   
+    <button type="button" id="download"  onclick="func2()"> change </button> -->
+
+
+    <div id="demo3">Third content</div>
+    <button type="button" id="get"> change </button>
+
+
+
+    <script type="text/javascript">
+        //2nd way of writing function 
+        const func = () => {
+            document.getElementById("demo").innerHTML = "Text changed";
+
+        }
+        // 3rd way of writing function
+        const func2 = () => {
+            let value=document.getElementById("demo2");
+            let btn=document.
+            getElementById("download");
+            btn.onclick=value.innerHTML="Download";
+        };
+
+
+        // 4th way of writing function
+        const fourthway= document.querySelector('#get');
+        fourthway.addEventListener("click",()=> {
+            document.getElementById("demo3").innerHTML = "Text changed";
+        });
+
+
+    </script>
+</body>
+
+</html>

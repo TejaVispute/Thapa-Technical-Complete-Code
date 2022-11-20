@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in DOM</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="backent.js">
+            <input type="radio" name="gender">
+            <label for="name">male</label>
+
+            <input type="radio" name="gender">
+            <label for="name">Female</label>
+
+            <input type="radio" name="gender" >
+            <label for="name">other</label>
+
+            <input type="button" name="button" type="button" value="Submit" >
+
+        </form>
+    </div>
+    
+    <script type="text/javascript">
+        const name=document.getElementsByName('gender');
+        console.log(name);
+    </script>
+</body>
+
+</html>

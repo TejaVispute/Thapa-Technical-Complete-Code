@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events In Js</title>
+</head>
+
+<body>
+    <!-- 4 ways to write events in Js -->
+    <!-- What is Event Object -->
+    <!-- Mouse Event in JavaScript -->
+    <!-- Keyboard Event in JavaScript -->
+    <!-- input event in JavaScript -->
+    <button id="btn" type="button">2nd btn</button>
+
+
+    <button type="button" onclick="callfn()">Call here</button>
+
+    <script type="text/javascript">
+
+       const callfn = () => {
+            alert("function called")
+        };
+        
+
+        // another way to call evet
+
+        const another=document.getElementById("btn");
+
+        another.onclick=function(){
+            alert("most common way to wirte function");
+
+        };
+        
+        </script>   
+</body>
+
+</html>

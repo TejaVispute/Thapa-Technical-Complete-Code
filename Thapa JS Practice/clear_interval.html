@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear interval in javascript</title>
+</head>
+
+<body>
+
+    <div class="main-div">
+
+        <div>
+            <p class="shownum"> </p>
+            <br>
+            <button type="button" id="btn"> Start</button>
+            <button type="button" id="btn2"> Stop</button>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+        const stopNum = document.querySelector('.shownum');
+        const btn = document.querySelector('#btn');
+        const stopInterval = document.querySelector('#btn2');
+
+        let timeRef;
+        let numb = 300;
+
+
+        const showMynum = () => {
+            timeRef = setInterval(() => {
+                stopNum.innerHTML = numb;
+                numb--;
+            }, 1000);
+        };
+
+
+        btn.addEventListener('click', showMynum);
+
+        stopInterval.addEventListener('click', () => {
+            clearInterval(timeRef);
+            // document.write(Math.abs(numb-300));
+        });
+
+
+        // interview question
+
+        // setTimeout() 
+        // The function will execute only once after perticular milliseconds
+
+
+        // setInterval() 
+        // The function will execute Repetly after perticular milliseconds.
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

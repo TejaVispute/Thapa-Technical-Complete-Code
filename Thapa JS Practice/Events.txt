@@ -1,0 +1,35 @@
+Section 11 Events in Javascript
+
+
+    <!-- 4 ways to write events in Js -->
+    <!-- What is Event Object -->
+    <!-- Mouse Event in JavaScript -->
+    <!-- Keyboard Event in JavaScript -->
+    <!-- input event in JavaScript -->
+
+
+HTML events are things that happen to HTML elements.
+When JavaScript is used in HTML pages, JavaScript can react on these events.
+
+HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events.
+
+An HTML web page has finished loading
+An HTML input field was changed
+An HTML button was clicked
+Often, when events happen, you may want to do something
+
+JavaScript lets yout execute code when events are detected.
+
+HTML allows event handler attributesm with JavaScript code, to be added to HTML elements.
+
+Section 2 : What is event object?
+
+Event object is the parent object of  the event object
+Ex. 
+MouseEvent, focuseEvent, KeyboardEvent etc.
+
+
+
+

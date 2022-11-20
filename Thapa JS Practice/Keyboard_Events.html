@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Events</title>
+</head>
+
+<style type="text/css">
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+</style>
+
+<body>
+    <!-- Keyboard Events in js -->
+    <!-- Events that occur when user presses a key on the keyboard,  balongs to the keyboard object -->
+
+
+    <div class="container">
+
+        <p> A function is triggerd when the user is pressing a key in the inut field.</p>
+
+        <input type="text" id="inputsection" onkeypress="onkeypr()" onkeydown="onkeydow()"
+        onkeyup="keyup()" placeholder="Enter your key">
+
+        <p id="result">Result display here</p>
+
+    </div>
+
+
+    <script type="text/javascript">
+        // let onkeypr=()=>{
+        //     document.getElementById('result').innerHTML=`your pressed ${event.key} its code is ${event.code}`;
+        // }
+        let onkeydow=()=>{
+            document.getElementById('result').innerHTML= `key is down`;
+        }
+        let keyup=()=>{
+            document.getElementById('result').innerHTML= `key UP`;
+        }
+
+
+    </script>
+</body>
+
+</html>
