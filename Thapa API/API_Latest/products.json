@@ -1,0 +1,38 @@
+[
+    {
+        "name": "iPhone",
+        "price": 1213,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "iPhone10",
+        "price": 45343,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "watch",
+        "price": 5433,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "samsung s 20",
+        "price": 56565,
+        "feature": true,
+        "company": "samsung"
+    },
+    {
+        "name": "redmi",
+        "price": 12345,
+        "feature": true,
+        "company": "apple"
+    },
+    {
+        "name": "Moto",
+        "price": 9999,
+        "feature": true,
+        "company": "apple"
+    }
+]
