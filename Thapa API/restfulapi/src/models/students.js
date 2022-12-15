@@ -33,5 +33,4 @@ const studentSchema = new mongoose.Schema({
 // create a new collecation using schema
 
 const Student = new mongoose.model("Student", studentSchema);
-
 module.exports = Student;
